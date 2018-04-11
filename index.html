@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dyna'meet</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="images/logo_nb.png">
+  </head>
+  <body>
+
+<!-- COMPTE A REBOURS -->
+      <table class=CAR_Container>
+        <tr>
+          <td class=styleCompteur id="minutes"></td>
+          <td class=styleCompteur id="seconds"></td>
+        </tr>
+        
+        <tr>
+          <td class="ecrit">Minutes</td>
+          <td class="ecrit">Seconds</td>
+        </tr>
+      </table>
+
+<!-- PAVE NUMERIQUE -->
+    <div id="cadre">
+          <input type="text" value="" id="resultat" disabled="disabled"/>
+
+            <div class="ligne1">
+              <button value="7" id="sept" class="touche" onclick="sept()">7</button>
+              <button value="8" id="huit" class="touche" onclick="huit()">8</button>
+              <button value="9" id="neuf" class="touche" onclick="neuf()">9</button>
+            </div>
+
+            <div class="ligne2">
+              <button value="4" id="quatre" class="touche" onclick="quatre()">4</button>
+              <button value="5" id="cinq" class="touche" onclick="cinq()">5</button>
+              <button value="6" id="six" class="touche" onclick="six()">6</button>
+            </div>
+
+            <div class="ligne3">
+              <button value="1" id="un" class="touche" onclick="un()">1</button>
+              <button value="2" id="deux" class="touche" onclick="deux()">2</button>
+              <button value="3" id="trois" class="touche" onclick="trois()">3</button>
+            </div>
+
+            <div class="ligne4">
+              <button value="0" id="zero" class="touche" onclick="zero()">0</button>
+              <button value="OK" id="OK" class="touche" onclick="OK()">✓</button>
+              <button value="clear" id="clear" class="touche" type="reset" onclick="clear()">X</button>
+            </div>
+        </div>
+
+  </body>
+  <script type="text/javascript" src="js/main.js">
+
+  </script>
+</html>
